@@ -3,15 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Simulador de cambio de moneda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Divisas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Simulador de cambio de moneda</h1>
-  <p>Convierte un monto desde pesos chilenos a dólares o euros usando valores fijos para el tipo de
-    cambio</p>
+  <div class="simulador">
+    <h2>Cambio de moneda</h2>
 
-  <script src="/script.js"></script>
+    <input type="number" id="monto" placeholder="Ingresa monto">
+
+    <br>
+    <label>De:</label>
+    <select id="origen"></select>
+
+    <label>A:</label>
+    <select id="destino"></select>
+
+    <br>
+    <button onclick="convertir()">Convertir</button>
+    <p id="resultado"></p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
